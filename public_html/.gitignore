@@ -1,0 +1,8 @@
+.idea/
+*.m3u*
+*.xml
+*.txt
+*.gz
+*.sh
+/test.json
+*.log

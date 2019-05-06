@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+		<meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="static/assets/images/favicon.ico" type="image/ico" />
+		<title>m3u</title>
+<link href="static/main.css" rel="stylesheet">
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+
+<body
+<div class="container">
+	<div class="row">
+	<div class="boxes">
+
+		<form method="post">
+  <input type="checkbox" id="box-1">
+
+  {% for line in data %}
+
+  <input value="{{line[0]}}" name="m3u" type="checkbox" id="box-{{line[1]}}" >
+  <label for="box-{{line[1]}}" >{{line[0]}}</label>
+
+
+  {%endfor%}
+
+  <input type="submit">
+
+</form>
+
+</div>
+
+
+	</div>
+</div>
+></body>
+
+</html>
